@@ -308,11 +308,30 @@ body {
 .works-list {
     display: flex;
 }
+.works-li{
+    position: relative;
+}
 .works-li:not(:last-child) {
     margin-right: 30px;
 }
 .works-img {
     display: block;
+}
+.works-title{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+
+    margin: 0;
+    padding: 27px 82px 27px 83px;
+
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: var(--second-text-color);
+    background: rgba(47, 48, 58, 0.8);
 }
 .team.section {
 background-color: var(--bgc-button-color);
