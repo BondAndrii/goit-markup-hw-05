@@ -54,7 +54,6 @@ body {
 }
 .header-clss{ 
     display: flex;
-    /* height: 80px; */
     border-bottom: 1px solid #ECECEC  
     
 }
@@ -104,6 +103,7 @@ body {
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* задаю колір та шрифт ссилок в блоці навігації при наваденні та переході */
 .site-nav .link:hover,
@@ -122,25 +122,18 @@ body {
 }
 .contact-li{
     display: flex;
-    
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .contact-li + .contact-li {
     margin-left: 50px;
 }
-.link-cont{
+.link-cont {
     display: flex;
     align-items: center;
 }
 .contact-li:hover{
     color: var(--accent-color);
 }
-/* .contact-mylo { 
-    display: flex;
-    align-items: center;
-    /* color:currentColor 
-}*/
-
-
 .mylo-icon {
     padding: 0px;
     margin-right:10px;
@@ -170,6 +163,7 @@ body {
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* задаю колір та шрифт ссилок в блоці авторизації при наваденні та переході */
@@ -292,6 +286,8 @@ body {
     height: 44px;
     border-radius: 50%;
     color: var(--sotsset-color);
+
+   
     
   }
 .button-sots:hover{
@@ -361,17 +357,13 @@ background-color: var(--bgc-button-color);
     align-items: center;
 }
 .sots-li{
-   display: flex;
-   align-items: center;
-   justify-content: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
    
 }
-/* .button-sots +.sots-li {
-    margin-left: 10px;
-} */
-/* .sots-li + .sots-li {
-    margin-left: 10px;
-} */
+
 .button-sots{  
     display: flex;
     align-items: center;
@@ -383,7 +375,9 @@ background-color: var(--bgc-button-color);
     height: 44px;
     border-radius: 50%;
     color: var(--sotsset-color);
-    background-color: var(--second-text-color)
+    background-color: var(--second-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    
   }
 .button-sots:hover{
     color: var(--second-text-color);
@@ -395,6 +389,7 @@ background-color: var(--bgc-button-color);
     height: 20px;
 
     fill: currentColor;
+    
     
 }
 .clients{
@@ -412,6 +407,9 @@ background-color: var(--bgc-button-color);
     border: 1px solid var(--sotsset-color);
     border-radius: 4px;
     color: var(--sotsset-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
+                border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .clients-place:hover {
     color: var(--accent-color);
@@ -422,39 +420,7 @@ background-color: var(--bgc-button-color);
     fill: currentColor;
     margin: 16px 32px 16px 32px;
 }
-/* .clients-icon:hover{
-    fill: var(--accent-color)
-} */
-/* .clients-place { 
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
-    padding: 0;
-    width: 170px;
-    height: 92px;
-    border: 1px solid var(--sotsset-color);
-    border-radius: 4px;
-    color: var(--sotsset-color);
-
-}
-
-.clients-place:hover {
-    color: var(--accent-color);
-    background-color: var(--second-text-color);
-}
-
-.clients-icon {
-    display: flex;
-    margin: 16px 32px 16px 32px;
-
-    fill: currentColor;
-
-}*/
-/* .button-icon:hover{
-    fill: var(--second-text-color);
-    background-color: var(--accent-color);
-} */
 .portfolio-header {
     margin-bottom: 94px;
 }
@@ -462,6 +428,9 @@ background-color: var(--bgc-button-color);
     display: flex;
     margin-bottom: 50px;
     justify-content: center;
+}
+.filter-li{
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .filter-li + .filter-li {
     margin-left: 8px;
@@ -496,6 +465,8 @@ background-color: var(--bgc-button-color);
     width: 370px;
     margin-right: 30px;
     margin-bottom: 30px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .example-li:hover{
@@ -578,9 +549,10 @@ background-color: var(--bgc-button-color);
     border-radius: 50%;
     color: var(--second-text-color);
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .button-foot-sots:hover {
-    color: var(--second-text-color);
     background-color: var(--accent-color);
 }
 
@@ -601,6 +573,8 @@ background-color: var(--bgc-button-color);
 /* задаю колір контактів в футері */
 .footer-nav .contact {
     color: var(--footer-second-text-color);
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-nav .contact:hover,
@@ -623,6 +597,9 @@ background-color: var(--bgc-button-color);
     font-size: 16px;
     line-height: 1.62;      
     text-align: center;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     
 }
 .button.current {
