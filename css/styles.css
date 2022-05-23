@@ -595,12 +595,9 @@ background-color: var(--bgc-button-color);
     
     color: var(--second-text-color);
 }
-.sotsset-footer{
-    /* width: 206px; */
+.sotsset-footer{    
     display: flex;
-    margin-top: 20px;
-    /* justify-content: space-between;    */
-    
+    margin-top: 20px;       
 }
 
 .sots-li-foot + .sots-li-foot{
@@ -624,7 +621,6 @@ background-color: var(--bgc-button-color);
 .button-foot-sots:hover {
     background-color: var(--accent-color);
 }
-
 /* задаю колір тексту футера */
 .footer-nav .link {
     color: var(--second-text-color);    
@@ -632,12 +628,6 @@ background-color: var(--bgc-button-color);
     font-style: normal;
     line-height: 1.71;     
 }
-
-/* задаю колір ссилок в футері при наваденні та переході */
-/* .footer-nav .link:hover, 
-.footer-nav .link:focus {
-    color: var(--accent-color);
-}*/
 
 /* задаю колір контактів в футері */
 .footer-nav .contact {
@@ -650,7 +640,7 @@ background-color: var(--bgc-button-color);
 .footer-nav .contact:focus {
     color: var(--accent-color);
 }
-/* Оформляємо кнопки */
+/*--------------- Оформляємо кнопки----------- */
 /* задаю колір та шрифт кнопок фільтру */
 .button {
     display: inline-block;
@@ -703,6 +693,7 @@ background-color: var(--bgc-button-color);
     text-align: center;
     letter-spacing: 0.06em;
 }
+/* ---------Модальне вікно---------------------------------- */
 .backdrop{
     position: fixed;
 
